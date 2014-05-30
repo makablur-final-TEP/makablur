@@ -1,3 +1,128 @@
+body{
+	width: 860px;
+	margin: 0 auto;
+	background-color: #dddddd;
+
+}
+header{
+	height: 140px;
+	background-color: #5C9900;
+	width: 860px;
+	overflow: hidden;
+}
+header img{
+	float: left;
+	display: inline-block;
+}
+.logo{
+	padding-left: 40px;
+	width: 250px;
+	height: 200px;
+}
+header div a img {
+	width: 50px;
+	height: 50px;
+}
+#busca{
+	margin-top: 80px;
+	margin-left: 500px;
+}
+header div input{
+	margin: 20px 30px;
+	padding-left: 40px;
+	border: 4px inset;
+	border-radius: 40px;
+}
+
+nav{
+	overflow: hidden;
+	padding: 10px;
+	background-color: #60B9CE;
+
+}
+nav a{
+	text-decoration: none;
+	color: #015367;
+}
+nav a:hover{
+	padding: 0 20px;
+	background-color: #04819E;
+	color: #ffffff;
+	border: 4px solid #04819E;
+	border-radius: 30px;
+}
+nav li{
+	float: left;
+	padding-left: 40px;
+
+
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+footer{
+	overflow: hidden;
+	background-color: #0E0E0E;
+	color: #ffffff;
+}
+footer div{
+	height: 140px;
+	float: left;
+	width: 200px;
+}
+footer ul{
+	padding-top: 60px;
+	padding-left: 600px;
+}
+footer ul div{
+		height: auto;
+		width: auto;
+		border: 4px groove #ffffff; 
+
+}
+h3{
+	padding-top: 65px;
+	padding-left: 500px;
+}
+
+
+
+
+
+
+
 ul.spicesocialwidget li {float: left;list-style: none outside none;border:none;}
 ul.spicesocialwidget li a{background-color:transparent;background-image:url('https://lh6.googleusercontent.com/-ImfwnK13pGw/Ui7ndohdbeI/AAAAAAAAB94/mkMwWrLrrP0/s924/mini-social-icons.png');background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
 .ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url('https://lh6.googleusercontent.com/-ImfwnK13pGw/Ui7ndohdbeI/AAAAAAAAB94/mkMwWrLrrP0/s924/mini-social-icons.png' )}

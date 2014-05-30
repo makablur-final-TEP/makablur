@@ -6,17 +6,41 @@
 	<title>Makablur</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
 </head>
 <body>
 	<header>
 		<div>
-			<img src="images/logo.png" title="Makablur" alt="logo">
+			<img  class="logo" src="images/logo.png" title="Makablur" alt="logo">
 		</div>
-		<div>
+		<div id="busca">
 			<a href=""><img src="images/shopping_bag.png"></a>
 			<input type="search" placeholder="buscar producto...">
 		</div>
+
+		<script>
+  		$(function(){
+    	$(".rslides").responsiveSlides({
+  			auto: true,             /* Boolean: Animate automatically, true or false*/
+  			speed: 400,            /* Integer: Speed of the transition, in milliseconds*/
+  			timeout: 2000,          /* Integer: Time between slide transitions, in milliseconds*/
+  			pager: true,           /* Boolean: Show pager, true or false*/
+  			nav: true,             /* Boolean: Show navigation, true or false*/
+  			random: false,          /* Boolean: Randomize the order of the slides, true or false*/
+  			pause: true,           /* Boolean: Pause on hover, true or false*/
+  			pauseControls: true,    /* Boolean: Pause when hovering controls, true or false*/
+			prevText: "Anterior",   /* String: Text for the "previous" button*/
+  			nextText: "Siguiente",       /* String: Text for the "next" button*/
+  			namespace: "rslides",   /* String: Change the default namespace used*/
+	  		before: function(){},   /* Function: Before callback*/
+  			after: function(){},     /* Function: After callback */
+			});
+  		});
+	</script>
+	
 	</header>
+
 	<nav>
 		<ul>
 			<li><a href="#">PRINCIPAL</a></li>
@@ -27,14 +51,24 @@
 			<li><a href="#">ACERCA DE</a></li>
 		</ul>
 	</nav>
+
 	<div>
-		<div data-background='images/clock_slider.jpg'></div>
-		<div data-backgrounnd='images/perfume_slider.jpg'></div>
-		<div data-background='images/glasses_slider.jpg'></div>
+		<ul class="rslides">
+  			<li><img src="images/1.jpg" alt=""></li>
+ 			 <li><img src="images/2.jpg" alt=""></li>
+ 			 <li><img src="images/3.jpg" alt=""></li>
+		</ul>
 	</div>
+	
+
 	<footer>
-		<p>Copyright 2014 Todos los derechos reservados</p>
+	<div>
+		<img class="logo" src="images/logo-gris.png" alt="logo">
+	</div>
+		
+
 		<ul class="spicesocialwidget">
+		<div>
 			<li class="facebook">
 			<a rel="nofollow" href="http://www.facebook.com/techsperia" target="_blank" title="Facebook"></a></li>
 			<li class="googleplus">
@@ -43,8 +77,11 @@
 			<a rel="nofollow" href="http://www.twitter.com/techsperia" target="_blank" title="Twitter"></a></li>
 			<li class="youtube">
 			<a rel="nofollow" href="http://www.youtube.com/TechsperiaTV" target="_blank" title="YouTube"></a></li>
+		</div>
 		</ul>
-	</footer>
 
+		<h3>Copyright 2014 Todos los derechos reservados</h3>
+
+	</footer>
 </body>
 </html>
