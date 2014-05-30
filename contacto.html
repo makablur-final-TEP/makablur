@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="es">
+	<meta charset="UTF-8">
+	<title>Mi Cuenta</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" title="Makablur" alt="logo">
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">PRINCIPAL</a></li>
+			<li><a href="#">MI CUENTA</a></li>
+			<li><a href="#">TIENDAS</a></li>
+			<li><a href="#">AYUDA</a></li>
+			<li><a href="#">CONTACTO</a></li>
+			<li><a href="#">ACERCA DE</a></li>
+		</ul>
+		<div>
+			<a href=""><img src="images/shopping_bag.png"></a>
+			<input type="search" placeholder="buscar producto...">
+		</div>
+	</nav>
+	<article>
+		<section>
+			<div>
+				<h2>CLIENTE REGISTRADO</h2>
+				<form action="enviar.php" method="post">
+					<input type="email" name="correo" placeholder="E-Mail" required/>
+					<input type="password" name="contraseña" placeholder="contraseña" required/>
+					<button type="submit">ENTRAR</button>
+				</form>
+				<a href="#">¿Olvidaste tu contraseña?</a>
+			</div>
+			<div>
+				<h2>CLIENTE NUEVO</h2>
+				<form action="enviar.php" method="post">
+					<input type="name" name="nombre" placeholder="Nombre(s)" autofocus required/>
+					<input type="lastname" name="apellidoPat" placeholder="Apellido Paterno" autofocus required/>
+					<input type="lastname" name="apellidoMat" placeholder="Apellido Materno" autofocus required/>
+					<select>
+						<option selected value="0">Género</option>
+						<option value="1">Masculino</option>
+						<option value="2">Femenino</option>
+					</select>
+					<label for="calendario">Fecha de nacimiento</label>
+					<input id="calendario" type="date" name="calendario" required/>
+					<input type="email" name="correo" placeholder="E-Mail" required/>
+					<input type="email" name="correo" placeholder="Confirmar E-Mail" /required>
+					<input type="password" name="contraseña" placeholder="Contraseña" /required>
+					<input type="password" name="contraseña" placeholder="Confirmar contraseña" /required>
+					<button type="submit">REGISTRARSE</button>
+				</form>
+			</div>
+		</section>
+	</article>
+	<footer>
+		<p>Copyright 2014 Todos los derechos reservados</p>
+		<ul class="spicesocialwidget">
+			<li class="facebook">
+			<a rel="nofollow" href="http://www.facebook.com/techsperia" target="_blank" title="Facebook"></a></li>
+			<li class="googleplus">
+			<a rel="nofollow" href="https://www.plus.google.com/107015367605965056336" target="_blank" title="Google Plus"></a></li>
+			<li class="twitter">
+			<a rel="nofollow" href="http://www.twitter.com/techsperia" target="_blank" title="Twitter"></a></li>
+			<li class="youtube">
+			<a rel="nofollow" href="http://www.youtube.com/TechsperiaTV" target="_blank" title="YouTube"></a></li>
+		</ul>
+	</footer>
+</body>
+</html>
