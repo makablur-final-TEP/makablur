@@ -80,32 +80,36 @@ nav li{
 }
 
 footer{
+	width: 960px;
+	height: auto;
 	overflow: hidden;
 	background-color: #494628;
 	color: #47ab04;
 }
-footer div{
-	height: 140px;
+#foot{
+	width: 480px;
+	height: 100px;
 	float: left;
+}
+.logo_ver{
+	padding: 15px 215px 15px 65px;
 	width: 200px;
+	height: 70px;
 }
-footer ul{
-	padding-top: 60px;
-	padding-left: 600px;
+#soc{
+	width: 480px;
+	height: 100px;
+	float: left;
 }
-footer ul div{
-		height: auto;
-		width: auto;
+#iconitos{
+	padding: 15px 65px 15px 287px;
+	width: 128px;
+	height: 32px;
+	float: left;
 }
-h3{
-	padding-top: 65px;
-	padding-left: 500px;
-}
-
-
 ul.spicesocialwidget li {float: left;list-style: none outside none;border:none;}
-ul.spicesocialwidget li a{background-color:transparent;background-image:url('https://lh6.googleusercontent.com/-ImfwnK13pGw/Ui7ndohdbeI/AAAAAAAAB94/mkMwWrLrrP0/s924/mini-social-icons.png');background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
-.ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url('https://lh6.googleusercontent.com/-ImfwnK13pGw/Ui7ndohdbeI/AAAAAAAAB94/mkMwWrLrrP0/s924/mini-social-icons.png' )}
+ul.spicesocialwidget li a{background-color:transparent;background-image:url(../images/mini_social_icons.png);background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
+.ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url(../images/mini_social_icons.png)}
 ul.spicesocialwidget li.facebook a{ background-position:0 0}
 ul.spicesocialwidget li.googleplus a{ background-position:-96px 0}
 ul.spicesocialwidget li.twitter a{ background-position:-256px 0}
@@ -114,6 +118,16 @@ ul.spicesocialwidget li.facebook a:hover, #sidebar ul.spicesocialwidget li.faceb
 ul.spicesocialwidget li.googleplus a:hover, #sidebar ul.spicesocialwidget li.googleplus a:hover{ background-position:-96px -32px}
 ul.spicesocialwidget li.twitter a:hover, #sidebar ul.spicesocialwidget li.twitter a:hover{ background-position:-256px -32px}
 ul.spicesocialwidget li.youtube a:hover, #sidebar ul.spicesocialwidget li.youtube a:hover{ background-position:-320px -32px}
+
+footer div h3{
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 10px 65px 10px 139px;
+}
+
+
+
 
 #mapdiv{
 	position: relative; 
