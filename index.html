@@ -4,43 +4,27 @@
 	<meta lang="es">
 	<meta charset="UTF-8">
 	<title>Makablur</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/responsiveslides.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/call.js"></script>
+
 </head>
 <body>
 	<header>
-		<div>
-			<img  class="logo" src="images/logo.png" title="Makablur" alt="logo">
+		<div id="logo">
+			<img class="logo" src="images/logo.png" title="Makablur" alt="logo">
 		</div>
 		<div id="busca">
 			<a href=""><img src="images/shopping_bag.png"></a>
-			<input type="search" placeholder="buscar producto...">
+			<input type="search" placeholder="Buscar Producto...">
 		</div>
-
-		<script>
-  		$(function(){
-    	$(".rslides").responsiveSlides({
-  			auto: true,             /* Boolean: Animate automatically, true or false*/
-  			speed: 400,            /* Integer: Speed of the transition, in milliseconds*/
-  			timeout: 2000,          /* Integer: Time between slide transitions, in milliseconds*/
-  			pager: true,           /* Boolean: Show pager, true or false*/
-  			nav: true,             /* Boolean: Show navigation, true or false*/
-  			random: false,          /* Boolean: Randomize the order of the slides, true or false*/
-  			pause: true,           /* Boolean: Pause on hover, true or false*/
-  			pauseControls: true,    /* Boolean: Pause when hovering controls, true or false*/
-			prevText: "Anterior",   /* String: Text for the "previous" button*/
-  			nextText: "Siguiente",       /* String: Text for the "next" button*/
-  			namespace: "rslides",   /* String: Change the default namespace used*/
-	  		before: function(){},   /* Function: Before callback*/
-  			after: function(){},     /* Function: After callback */
-			});
-  		});
-	</script>
-	
 	</header>
+	
 
 	<nav>
 		<ul>
@@ -54,20 +38,15 @@
 	</nav>
 
 	<div>
-		<ul class="rslides">
-  			<li><img src="images/1.jpg" alt=""></li>
- 			 <li><img src="images/2.jpg" alt=""></li>
- 			 <li><img src="images/3.jpg" alt=""></li>
+		<ul class="bxslider">
+  			<li><img src="images/clock_slider.jpg" alt="image_1"></li>
+ 			<li><img src="images/glasses_slider.jpg" alt="image_2"></li>
+ 			<li><img src="images/perfume_slider.jpg" alt="image_3"></li>
 		</ul>
 	</div>
 	
 
 	<footer>
-	<div>
-		<img class="logo" src="images/logo-gris.png" alt="logo">
-	</div>
-		
-
 		<ul class="spicesocialwidget">
 		<div>
 			<li class="facebook">
@@ -80,9 +59,8 @@
 			<a rel="nofollow" href="http://www.youtube.com/TechsperiaTV" target="_blank" title="YouTube"></a></li>
 		</div>
 		</ul>
-
 		<h3>Copyright 2014 Todos los derechos reservados</h3>
-
 	</footer>
+
 </body>
 </html>
