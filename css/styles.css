@@ -8,6 +8,7 @@ body{
 	margin: 0 auto;
 	background-color: #d6f2c1;
 	font-family: 'Cuprum', sans-serif;
+	overflow: hidden;
 }
 header{
 	width: 960px;
@@ -73,6 +74,10 @@ nav li{
 	float: left;
 	padding: 0 40px;
 }
+.slide{
+	width: 960px;
+	height: 600px;
+}
 
 footer{
 	overflow: hidden;
@@ -91,8 +96,6 @@ footer ul{
 footer ul div{
 		height: auto;
 		width: auto;
-		border: 4px groove #ffffff; 
-
 }
 h3{
 	padding-top: 65px;
