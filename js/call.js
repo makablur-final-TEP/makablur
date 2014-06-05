@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider({
-  infiniteLoop: false,
-  hideControlOnEnd: true
-});
+  		infiniteLoop: false,
+ 		 hideControlOnEnd: true
+	});
 });
 

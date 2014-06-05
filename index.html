@@ -4,11 +4,11 @@
 	<meta lang="es">
 	<meta charset="UTF-8">
 	<title>Makablur</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/style_index.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/call.js"></script>
@@ -26,22 +26,27 @@
 	</header>
 	
 	<nav>
-		<ul>
-			<li><a href="#">PRINCIPAL</a></li>
-			<li><a href="#">MI CUENTA</a></li>
-			<li><a href="#">TIENDAS</a></li>
-			<li><a href="#">AYUDA</a></li>
-			<li><a href="#">CONTACTO</a></li>
-			<li><a href="#">ACERCA DE</a></li>
-		</ul>
+		<div class="outer">
+			<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+			<label for="slide-checkbox" class="slide-toggle" onclick></label>
+			<div class="slide">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Principal</a></li>
+					<li><a href="#">Mi Cuenta</a></li>
+					<li><a href="#">Tienda</a></li>
+					<li><a href="#">Ayuda</a></li>
+				</ul>
+				<div>
+					<ul class="bxslider">
+  						<li><img class="slide1" src="images/clock_slider.jpg" alt="image_1"></li>
+				 		<li><img class="slide1" src="images/glasses_slider.jpg" alt="image_2"></li>
+				 		<li><img class="slide1" src="images/perfume_slider.jpg" alt="image_3"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</nav>
-
-	<ul class="bxslider">
-  		<li><img class="slide" src="images/clock_slider.jpg" alt="image_1"></li>
- 		<li><img class="slide" src="images/glasses_slider.jpg" alt="image_2"></li>
- 		<li><img class="slide" src="images/perfume_slider.jpg" alt="image_3"></li>
-	</ul>
-	
 	
 	<footer>
 		<div id="foot">
