@@ -3,11 +3,13 @@
 <head>
 	<meta lang="es">
 	<meta charset="UTF-8">
-	<title>Ayuda</title>
+	<title>Makablur - Ayuda</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style_about.css">
-	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
-</head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/call.js"></script>
 <body>
 	<header>
 		<div id="logo">
@@ -19,40 +21,42 @@
 		</div>
 	</header>
 	<nav>
-		<ul>
-			<li><a href="#">PRINCIPAL</a></li>
-			<li><a href="#">MI CUENTA</a></li>
-			<li><a href="#">TIENDAS</a></li>
-			<li><a href="#">AYUDA</a></li>
-			<li><a href="#">CONTACTO</a></li>
-			<li><a href="#">ACERCA DE</a></li>
-		</ul>
-	</nav>
-	<article>
-		<section>
-			<h1>ACERCA DE NOSOTROS</h1>
-			<p>
-				Makablur es una empresa socialmente responsable a nivel mundial. Nos esforzamos por mantener prácticas recomendadas para la susstentabilidad y mantenemos un equilibrio entre las preocupaciones económicas, medioambientales y sociales.
-				Nos comprometemos a ser una empresa con un gran respeto por los derechos humanos, las condiciones de trabajo seguras y las prácticas empresariales respetuosas con el medio ambiente, así como por nuestra propia organización y por aquellos con los que colaboramos.
-			</p>
-			<strong>Misión</strong>
-			<p>
-				Ofrecer a nuestros clientes los productos y servicios de la más alta calidad, al precio justo, en el ámbito adecuado, procurando su más amplia satisfacción a través de un esmerado servicio personalizado. El cliente es la razón de ser de nuestro trabajo.
-			</p>
-			<strong>Visión</strong>
-			<p>
-				Consolidar y mantener el liderazgo de nuestra Empresa en el mercado, integrando los objetivos de sus clientes, personal, proveedores y accionistas.
-			</p>
-			<strong>Valores</strong>
-			<ul>
-				<li>Trabajo</li>
-				<li>Crecimiento</li>
-				<li>Responsabilidad Social</li>
-				<li>Eficiencia</li>
-			</ul>
-		</section>
-	</article>
+		<div class="outer">
+			<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+			<label for="slide-checkbox" class="slide-toggle" onclick></label>
+			<div class="slide">
+				<ul class="nav">
+					<li><a href="Principal">Principal</a></li>
+					<li><a href="mi_cuenta.html">Mi Cuenta</a></li>
+					<li><a href="tiendas.html">Tiendas</a></li>
+					<li><a href="ayuda.html">Ayuda</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="about.html">Acerca de</a></li>
 
+				</ul>
+				<div class="content">
+					<article>
+						<section>
+							<h1>ACERCA DE NOSOTROS</h1>
+								<p>Makablur es una empresa socialmente responsable a nivel mundial. Nos esforzamos por mantener prácticas recomendadas para la susstentabilidad y mantenemos un equilibrio entre las preocupaciones económicas, medioambientales y sociales.
+								Nos comprometemos a ser una empresa con un gran respeto por los derechos humanos, las condiciones de trabajo seguras y las prácticas empresariales respetuosas con el medio ambiente, así como por nuestra propia organización y por aquellos con los que colaboramos.</p>
+							<strong>Misión</strong>
+								<p>Ofrecer a nuestros clientes los productos y servicios de la más alta calidad, al precio justo, en el ámbito adecuado, procurando su más amplia satisfacción a través de un esmerado servicio personalizado. El cliente es la razón de ser de nuestro trabajo.</p>
+							<strong>Visión</strong>
+								<p>Consolidar y mantener el liderazgo de nuestra Empresa en el mercado, integrando los objetivos de sus clientes, personal, proveedores y accionistas.</p>
+							<strong>Valores</strong>
+								<ul>
+									<li>Trabajo</li>
+									<li>Crecimiento</li>
+									<li>Responsabilidad Social</li>
+									<li>Eficiencia</li>	
+								</ul>
+						</section>
+					</article>
+				</div>
+			</div>
+		</div>
+	</nav>
 	<footer>
 		<div id="foot">
 			<img class="logo_ver" src="images/logo_green.png">
