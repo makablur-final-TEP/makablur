@@ -3,17 +3,24 @@
 <head>
 	<meta lang="es">
 	<meta charset="UTF-8">
+	<title>Makablur</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<title>Tiendas</title>
+	<script src="js/watchPosition.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="js/watchPosition.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="css/style_tiendas.css">
+	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
 </head>
+
 <body onload="geoloc()">
 	<header>
-		<img src="images/logo.png" title="Makablur" alt="logo">
+		<div id="logo">
+			<img class="logo" src="images/logo.png" title="Makablur" alt="logo">
+		</div>
+		<div id="busca">
+			<a href=""><img src="images/shopping_bag.png"></a>
+			<input type="search" placeholder="Buscar Producto...">
+		</div>
 	</header>
 	<nav>
 		<ul>
@@ -24,28 +31,47 @@
 			<li><a href="#">CONTACTO</a></li>
 			<li><a href="#">ACERCA DE</a></li>
 		</ul>
-		<div>
-			<a href=""><img src="images/shopping_bag.png"></a>
-			<input type="search" placeholder="buscar producto...">
-		</div>
 	</nav>
+
 	<article>
+		<aside>
+		<div id = 'mapdiv'></div>
+		</aside>
 		<section>
-			<div id="mapdiv"></div>
-        </section>
-	</article>
+			<h3>SUCURSALES CERCANAS A TI: </h3>
+			<p>
+			Dirección: Avenida Hank González 120 int. 44 y 102, Rinconada de Aragón, 55140 Ecatepec de Morelos, Estado de México
+			<span>Teléfono: 01 800 120 0220</span>
+			<span>Horario: Hoy abierto · 11:30–22:00</span>
+			</p>
+			<p>
+			Dirección: Calle 1 de Mayo esq. Avenida Central No. Ext. 04 No. Int. Local A-08 Fracc. Las Américas CP 55075 Estado de México, Zona Metropolitana
+			<span>Teléfono: 01 800 120 0220</span>
+			<span>Horario: Hoy abierto · 11:30–22:00</span>
+			</p>
+		</section>
+    </article>
+
 	<footer>
-		<p>Copyright 2014 Todos los derechos reservados</p>
-		<ul class="spicesocialwidget">
-			<li class="facebook">
-			<a rel="nofollow" href="http://www.facebook.com/techsperia" target="_blank" title="Facebook"></a></li>
-			<li class="googleplus">
-			<a rel="nofollow" href="https://www.plus.google.com/107015367605965056336" target="_blank" title="Google Plus"></a></li>
-			<li class="twitter">
-			<a rel="nofollow" href="http://www.twitter.com/techsperia" target="_blank" title="Twitter"></a></li>
-			<li class="youtube">
-			<a rel="nofollow" href="http://www.youtube.com/TechsperiaTV" target="_blank" title="YouTube"></a></li>
-		</ul>
+		<div id="foot">
+			<img class="logo_ver" src="images/logo_green.png">
+		</div>
+		
+		<div id="soc">
+			<ul class="spicesocialwidget">
+				<div id="iconitos">
+					<li class="facebook">
+					<a rel="nofollow" href="http://www.facebook.com/techsperia" target="_blank" title="Facebook"></a></li>
+					<li class="googleplus">
+					<a rel="nofollow" href="https://www.plus.google.com/107015367605965056336" target="_blank" title="Google Plus"></a></li>
+					<li class="twitter">
+					<a rel="nofollow" href="http://www.twitter.com/techsperia" target="_blank" title="Twitter"></a></li>
+					<li class="youtube">
+					<a rel="nofollow" href="http://www.youtube.com/TechsperiaTV" target="_blank" title="YouTube"></a></li>
+				</div>
+			</ul>
+			<h3>Copyright 2014 Todos los derechos reservados</h3>
+		</div>
 	</footer>
 </body>
 </html>

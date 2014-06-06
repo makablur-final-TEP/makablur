@@ -24,7 +24,7 @@ function showPosition(position) {
         var markerOpt = {
             map : googleMap,
             position : googlePos,
-            title : 'Hola estoy aqui',
+            title : 'USTED ESTÁ AQUÍ',
             animation : google.maps.Animation.DROP
         };
         var googleMarker = new google.maps.Marker(markerOpt);
@@ -43,7 +43,7 @@ function showPosition(position) {
                 popup.open(googleMap);
             });
                 } else {
-                    alert('No se han encontrado resultados');
+                    alert('No se hanencontrado resultados');
                 }
                 } else {
                     alert('Geocoder fallido debido a ' + status);
@@ -63,13 +63,13 @@ function showPosition(position) {
         var err = document.getElementById('mapdiv');
         switch(error.code) {
         case error.PERMISSION_DENIED:
-        err.innerHTML = "El usuario ha denegado la solicitud de ubicación."
+        err.innerHTML = "El usuario ha denegado la solicitus de ubicación."
         break;
         case error.POSITION_UNAVAILABLE:
         err.innerHTML = "La informacion de ubicación no está disponible."
         break;
         case error.TIMEOUT:
-        err.innerHTML = "La petición para obtener la ubicación ha excedido el tiempo."
+        err.innerHTML = "La peticion para obtener la ubicación ha excedido el tiempo."
         break;
         case error.UNKNOWN_ERROR:
         err.innerHTML = "Error desconocido."
