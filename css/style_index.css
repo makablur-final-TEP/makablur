@@ -44,8 +44,8 @@ body{
 	}
 	header div input{
 		float: left;
-		margin: 130px 65px auto 90px;
-		padding: 6px 40px;
+		margin: 130px 65px auto 80px;
+		padding: 6px 30px;
 		border: 4px inset #47ab04;
 		border-radius: 40px;
 	}
@@ -83,30 +83,32 @@ body{
 	/* @group .nav */
 	.nav {
 		width: 100%;
-		margin: 0 0 20px 0;
-		padding: 5px 0;
-		background: #333;
-		border-radius: 3px;
+		padding: 24px 0;
+		background: #47ab04;
 		overflow: hidden;
 	}
 
 	.nav li {
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: 0 40px;
 		float: left;
 	}
 
 	.nav li a {
 		display: block;
-		padding: 5px 20px;
+		padding: 5px 10px;
 		text-decoration: none;
-		background: #333;
-		color: #f9f9f9;
+		background: #47ab04;
+		color: #494628;
 	}
 
 	.nav li a:hover {
-		background: #2e2e2e;
+		padding: 10px 15px;
+		background-color: #d6f2c1;
+		color: #494628;
+		border: 4px solid #494628;
+		border-radius: 30px;
 	}
 
 	/* @end nav */
@@ -132,9 +134,9 @@ body{
 
 	/* The :after pseudo element has an icon that covers the checkbox */
 	.slide-toggle:after {
-		content: "!";
-		color: #f9f9f9;
-		background: #333;
+		content: "=";
+		color: #494628;
+		background: #47ab04;
 		display: block;
 		height: 30px;
 		width: 38px;
@@ -206,15 +208,15 @@ body{
 		}
 
 		.nav {
-			height: 100%;
-			background: #333;
+			height: 120%;
+			background: ##494628;
 			border-radius: 0;
 
 			/*
 		 		* The width determines how much of the page you want to
 		 		* remain visible once the menu slides over
 		 	*/
-			width: 70%;
+			width: 60%;
 
 			/*
 		 	* Must be absolutely positioned otherwise it won't sit
@@ -238,7 +240,264 @@ body{
 
 		.nav li a {
 			border-top: 1px solid #222;
-			border-bottom: 1px solid #444;
+			border-bottom: 0px solid #444;
+			padding: 12px 12px;
+		}
+
+		.nav li:first-child a {
+			border-top: none;
+		}
+
+		.nav li:last-child a {
+			border-bottom: none;
+		}
+
+		}
+	/*Termina NAV */
+
+	.slide1{
+		width: 950px;
+		height: 600px;
+	}
+
+	footer{
+		width: 980px;
+		height: auto;
+		overflow: hidden;
+		background-color: #494628;
+		color: #47ab04;
+	}
+	#foot{
+		width: 480px;
+		height: 100px;
+		float: left;
+	}
+	.logo_ver{
+		padding: 15px 215px 15px 65px;
+		width: 200px;
+		height: 70px;
+	}
+	#soc{
+		width: 480px;
+		height: 100px;
+		float: left;
+	}
+	#iconitos{
+		padding: 15px 65px 15px 287px;
+		width: 128px;
+		height: 32px;
+		float: left;
+	}
+	ul.spicesocialwidget li {float: left;list-style: none outside none;border:none;}
+	ul.spicesocialwidget li a{background-color:transparent;background-image:url(../images/mini_social_icons.png);background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
+	.ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url(../images/mini_social_icons.png)}
+	ul.spicesocialwidget li.facebook a{ background-position:0 0}
+	ul.spicesocialwidget li.googleplus a{ background-position:-96px 0}
+	ul.spicesocialwidget li.twitter a{ background-position:-256px 0}
+	ul.spicesocialwidget li.youtube a{ background-position:-320px 0}
+	ul.spicesocialwidget li.facebook a:hover, #sidebar ul.spicesocialwidget li.facebook a:hover{ background-position:0 -32px}
+	ul.spicesocialwidget li.googleplus a:hover, #sidebar ul.spicesocialwidget li.googleplus a:hover{ background-position:-96px -32px}
+	ul.spicesocialwidget li.twitter a:hover, #sidebar ul.spicesocialwidget li.twitter a:hover{ background-position:-256px -32px}
+	ul.spicesocialwidget li.youtube a:hover, #sidebar ul.spicesocialwidget li.youtube a:hover{ background-position:-320px -32px}
+
+	footer div h3{
+		float: left;
+		width: auto;
+		height: auto;
+		margin: 10px 65px 10px 139px;
+	}
+
+	#mapdiv{
+		position: relative; 
+		background: transparent; 
+		height: 400px; 
+		width: 400px; 
+	}
+	}
+@media all and (max-width: 480px) {
+		body{
+			width: 480px;
+			margin: 0 auto;
+			background-color: #d6f2c1;
+			font-family: 'Cuprum', sans-serif;
+			overflow: hidden;
+		}
+		header{
+			width: 480px;
+			height: 80px;
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+
+		#logo{
+			float: left;
+			height: 10px;
+		}
+		header img{
+			display: inline-block;
+		}
+		.logo{
+			padding: 5px 10px 10px 40px;
+			width: 175px;
+			height: 75px;
+		}
+		#busca{
+			float: left;
+			width: 480px;
+			height: 20px;
+		}
+		header div a img {
+			display: none;
+		}
+		header div input{
+			float: left;
+			margin: 34px 10px 0px 280px;
+			padding: 6px 4px;
+			border: 4px inset #47ab04;
+			border-radius: 40px;
+		}
+		header div input::-webkit-input-placeholder{
+    		color: #47ab04;
+    		font-weight: bold;
+		}
+		.slide1{
+		width: 450px;
+		height: 260px;
+	}
+	
+		
+footer{
+			width: auto;
+			height: 60px;
+			overflow: hidden;
+			background-color: #494628;
+			color: #47ab04;
+		}
+	#foot{
+		width: 60px;
+		height: 50px;
+		float: left;
+	}
+	.logo_ver{
+		padding: 5px 50px 15px 40px;
+		width: 120px;
+		height: 55px;
+	}
+	#soc{
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	#iconitos{
+		padding: 20px 65px 15px 240px;
+		width: 128px;
+		height: 32px;
+		float: left;
+	}
+	ul.spicesocialwidget li {float: left;list-style: none outside none;border:none;}
+	ul.spicesocialwidget li a{background-color:transparent;background-image:url(../images/mini_social_icons.png);background-repeat:no-repeat;background-size:auto 96px;border:0 none;color:white;direction:ltr;display:block; height:32px;overflow:hidden;text-align:left;text-decoration:none;text-indent:-999em;transition:all 0.2s ease 0s;width:32px}
+	.ie7 ul.spicesocialwidget li a, .ie8 ul.spicesocialwidget li a{background-image:url(../images/mini_social_icons.png)}
+	ul.spicesocialwidget li.facebook a{ background-position:0 0}
+	ul.spicesocialwidget li.googleplus a{ background-position:-96px 0}
+	ul.spicesocialwidget li.twitter a{ background-position:-256px 0}
+	ul.spicesocialwidget li.youtube a{ background-position:-320px 0}
+	ul.spicesocialwidget li.facebook a:hover, #sidebar ul.spicesocialwidget li.facebook a:hover{ background-position:0 -32px}
+	ul.spicesocialwidget li.googleplus a:hover, #sidebar ul.spicesocialwidget li.googleplus a:hover{ background-position:-96px -32px}
+	ul.spicesocialwidget li.twitter a:hover, #sidebar ul.spicesocialwidget li.twitter a:hover{ background-position:-256px -32px}
+	ul.spicesocialwidget li.youtube a:hover, #sidebar ul.spicesocialwidget li.youtube a:hover{ background-position:-320px -32px}
+
+	footer div h3{
+		display: none;
+	}
+
+	#mapdiv{
+		position: relative; 
+		background: transparent; 
+		height: 400px; 
+		width: 400px; 
+	}
+}
+
+@media all and (max-width: 320px) {
+		@media handheld, only screen and (max-width: 480px) {
+
+		/* Only show the menu link on smaller screens */
+		.slide-toggle {
+			display: block;
+		}
+
+		/*
+		 * The transition value determines the speed
+	 	 * at which the content will slide over
+	 	 */
+		.slide {
+			-webkit-transition: -webkit-transform 500ms ease;
+			-moz-transition: -moz-transform 500ms ease;
+			-o-transition: -o-transform 500ms ease;
+			transition: transform 500ms ease;
+		}
+
+		/*
+	 	 * Enable hardware acceleration and stop flickering
+	 	 * More details: http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/
+	 	 * Add more browser prefixes as required for your environment
+	 	 */
+		.slide,
+		.nav {
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-webkit-perspective: 1000;
+			-moz-perspective: 1000;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+		}
+
+		/*
+	 		* When the checkbox is checked slide the content
+	 		* over and the checkbox with it
+	 	*/	
+		.slide-checkbox:checked ~ .slide {
+			-webkit-transform: translateX(70%) scale(1);
+			-moz-transform: translateX(70%) scale(1);
+			-ms-transform: translateX(70%) scale(1);
+			-o-transform: translateX(70%) scale(1);
+			transform: translateX(70%) scale(1);
+		}
+
+		.nav {
+			height: 120%;
+			background: ##494628;
+			border-radius: 0;
+
+			/*
+		 		* The width determines how much of the page you want to
+		 		* remain visible once the menu slides over
+		 	*/
+			width: 60%;
+
+			/*
+		 	* Must be absolutely positioned otherwise it won't sit
+		 	* side by side with the content but instead above it
+		 	* */
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			/* Keeps the menu hidden off-canvas to the left */
+			-webkit-transform: translateX(-100%);
+			-moz-transform: translateX(-100%);
+			-ms-transform: translateX(-100%);
+			-o-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+
+		.nav li {
+			float: none;
+		}
+
+		.nav li a {
+			border-top: 1px solid #222;
+			border-bottom: 0px solid #444;
 			padding: 12px 12px;
 		}
 
@@ -322,7 +581,7 @@ body{
 		}
 		header{
 			width: 320px;
-			height: 150px;
+			height: 118px;
 			background-color: #ffffff;
 			overflow: hidden;
 		}
@@ -336,8 +595,8 @@ body{
 		}
 		.logo{
 			padding: 10px 20px 20px 80px;
-			width: 175px;
-			height: 75px;
+			width: 165px;
+			height: 65px;
 		}
 		#busca{
 			float: left;
@@ -345,16 +604,12 @@ body{
 			height: 190px;
 		}
 		header div a img {
-			float: left;
-			padding-left: 10px;
-			margin: 80px 10px auto;
-			width: 50px;
-			height: 50px;
+			display: none;
 		}
 		header div input{
 			float: left;
-			margin: 90px 60px auto 60px;
-			padding: 6px 15px;
+			margin: 75px 60px auto 75px;
+			padding: 4px 10px;
 			border: 4px inset #47ab04;
 			border-radius: 40px;
 		}
@@ -364,13 +619,13 @@ body{
 		}
 		.slide1{
 		width: auto;
-		height: auto;
+		height: 250px;
 	}
 	
 		
 footer{
-			width: auto;
-			height: auto;
+			width: 320px;
+			height: 52px;
 			overflow: hidden;
 			background-color: #494628;
 			color: #47ab04;
@@ -381,7 +636,7 @@ footer{
 		float: left;
 	}
 	.logo_ver{
-		padding: 5px 50px 15px 20px;
+		padding: 0px 50px 15px 20px;
 		width: 120px;
 		height: 55px;
 	}
@@ -391,7 +646,7 @@ footer{
 		float: left;
 	}
 	#iconitos{
-		padding: 30px 65px 15px 80px;
+		padding: 20px 65px 15px 80px;
 		width: 128px;
 		height: 32px;
 		float: left;
